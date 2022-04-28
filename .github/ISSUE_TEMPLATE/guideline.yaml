@@ -1,0 +1,42 @@
+name: Guideline
+description: Propuesta de nuevo guideline o modificación de alguno vigente.
+title: "[Guideline] <completar título>"
+labels: [Guideline]
+body:
+- type: dropdown
+  id: proposal-type
+  attributes:
+    label: ¿Nuevo Guideline o modificación?
+    description: Indicar si la propuesta es sobre la creación de un Guideline o sobre la modificación de alguno ya vigente.
+    options:
+      - Nuevo
+      - Modificación
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Descripción de la propuesta
+    description: Detalla la propuesta de la forma más clara y concisa posible.
+    placeholder: |
+      Propongo...
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: ¿Qué pros nos otorgaría?
+    description: Listar las ventajas que nos otorgaría el implementarla ("N/A" en caso que no aplique).
+    placeholder: |
+      Ejemplo:
+      - Mejora la legibilidad.
+      - Reduce el código.
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: ¿Qué contras nos acarrearía?
+    description: Listar las desventajas que nos acarrearía el implementarla ("N/A" en caso que no aplique).
+    placeholder: |
+      Ejemplo:
+      - Aumenta la mantenibilidad.
+  validations:
+    required: true
